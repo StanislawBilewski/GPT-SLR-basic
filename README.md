@@ -1,6 +1,6 @@
-# Systematic Literature Review Assistant
+# GPT-SLR-basic
 
-This project is a Systematic Literature Review (SLR) Assistant designed to help researchers conduct comprehensive and systematic reviews of academic literature. The app leverages GPT-4 for various tasks in the SLR process, such as title and abstract screening, full-text review, and keyword generation.
+This project is a Systematic Literature Review (SLR) Assistant designed to help researchers conduct semi-automatic reviews of academic literature. The app leverages GPT-4 for various tasks in the SLR process, such as title and abstract screening and full-text review.
 
 ## Features
 
