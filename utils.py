@@ -58,6 +58,9 @@ def save_papers_to_bibtex(papers, output_file_path):
         bibtex_file.write(writer.write(bib_database))
 
 def get_pdf_url(doi, user_email):
+    if not doi:
+        return None
+    
     headers = {
         "Accept": "application/json"
     }
