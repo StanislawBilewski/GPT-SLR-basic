@@ -7,7 +7,7 @@ from bibtexparser.bwriter import BibTexWriter
 from bibtexparser.bibdatabase import BibDatabase
 
 def extract_papers(bibtex_file_path):
-    with open(bibtex_file_path) as bibtex_file:
+    with open(bibtex_file_path, encoding='utf-8') as bibtex_file:
         bib_database = bibtexparser.load(bibtex_file)
     
     papers = []
@@ -54,7 +54,7 @@ def save_papers_to_bibtex(papers, output_file_path):
         bib_database.entries.append(entry)
     
     writer = BibTexWriter()
-    with open(output_file_path, 'w') as bibtex_file:
+    with open(output_file_path, 'w', encoding='utf-8') as bibtex_file:
         bibtex_file.write(writer.write(bib_database))
 
 def get_pdf_url(doi, user_email):
